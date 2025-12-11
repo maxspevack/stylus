@@ -1,0 +1,131 @@
+/* ==UserStyle==
+@name           Rantingly Dracula PRO
+@namespace      github.com/dracula/rantingly
+@version        1.0.1
+@description    Dracula PRO theme for Rantingly.com
+@author         Dracula Theme
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("rantingly.com") {
+    /* Main Backgrounds & Text */
+    body, 
+    #wrapper, 
+    #mobile-wrapper,
+    #main-content,
+    .site-branding-wrap,
+    #header {
+        background-color: #22212C !important;
+        color: #F8F8F2 !important;
+    }
+
+    /* Links */
+    a, 
+    a.headline-link, 
+    .wpd-top-links a, 
+    .link-col a, 
+    #featured a, 
+    .widget-head a {
+        color: #80FFEA !important; /* Cyan */
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #9580FF !important; /* Purple */
+    }
+
+    a:hover,
+    .wpd-top-links a:hover, 
+    .link-col a:hover, 
+    #featured a:hover, 
+    .widget-head a:hover {
+        color: #FF80BF !important; /* Pink */
+        text-decoration: underline;
+    }
+
+    /* Navigation & Menus */
+    .header-nav li a {
+        background-color: #454158 !important; /* Selection */
+        color: #F8F8F2 !important;
+    }
+    
+    .header-nav li.current-cat a, 
+    .header-nav li.current-menu-item a,
+    .header-nav li .sub-menu a:hover {
+        background-color: #7970A9 !important; /* Comment */
+        color: #F8F8F2 !important;
+    }
+
+    .header-nav .sub-menu {
+        border-top: 1px solid #9580FF !important;
+    }
+
+    /* Headers */
+    h1, h2, h3, h4, h5, h6,
+    #main-content h1, 
+    #main-content h2, 
+    h2.widget-head,
+    .widget-head {
+        color: #FFCA80 !important; /* Orange */
+    }
+
+    /* Borders & Separators */
+    .posts-list li.border, 
+    ul.border li,
+    .commentlist .children,
+    #comments, 
+    #respond,
+    .archive .widget-box,
+    .home .link-col, 
+    .blog .link-col,
+    .archive .link-col {
+        border-color: #454158 !important;
+    }
+
+    /* Load More Button */
+    .load-more-link {
+        background-color: #454158 !important;
+        color: #F8F8F2 !important;
+        box-shadow: 0px 1px 4px #22212C !important;
+    }
+
+    .load-more-link:hover {
+        background-color: #7970A9 !important;
+        color: #F8F8F2 !important;
+    }
+
+    /* Inputs & Forms */
+    input, textarea, select {
+        background-color: #454158 !important;
+        color: #F8F8F2 !important;
+        border: 1px solid #7970A9 !important;
+    }
+
+    /* Footer / Misc */
+    footer, .footer {
+        background-color: #22212C !important;
+        border-top: 1px solid #454158 !important;
+    }
+
+    /* Images */
+    img {
+        opacity: 0.9;
+    }
+    img:hover {
+        opacity: 1;
+    }
+    
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #22212C; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #454158; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #7970A9; 
+    }
+}

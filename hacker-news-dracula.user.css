@@ -1,0 +1,121 @@
+/* ==UserStyle==
+@name           Hacker News Dracula PRO
+@namespace      github.com/dracula/hacker-news
+@version        1.0.1
+@description    Dracula PRO theme for Hacker News
+@author         Dracula Theme
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("news.ycombinator.com") {
+    
+    /* Global Reset & Backgrounds */
+    body {
+        background-color: #22212C !important; /* Background */
+        color: #F8F8F2 !important; /* Foreground */
+    }
+
+    /* Main Container */
+    table#hnmain {
+        background-color: #22212C !important;
+        border: none !important;
+    }
+
+    /* Header Bar */
+    table#hnmain > tbody > tr > td[bgcolor="#ff6600"] {
+        background-color: #FFCA80 !important; /* Orange */
+        padding: 5px !important;
+    }
+
+    /* Header Links (new | past | comments...) */
+    .pagetop, .pagetop a {
+        color: #22212C !important; /* Dark text on orange background */
+        font-family: 'Verdana', sans-serif !important;
+    }
+    
+    .hnname a {
+        color: #22212C !important;
+        font-weight: bold !important;
+    }
+
+    /* Primary Links (Article Titles) */
+    .titleline > a,
+    .title > a {
+        color: #F8F8F2 !important; /* Foreground */
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .titleline > a:visited {
+        color: #7970A9 !important; /* Comment color for visited to be subtle, or Purple #9580FF */
+        /* Let's use Comment color for visited as is common in themes */
+        color: #9580FF !important; 
+    }
+
+    /* Domain / Site info (e.g. (github.com)) */
+    .sitebit.comhead, .sitestr {
+        color: #7970A9 !important; /* Comment color */
+    }
+
+    /* Meta Info (points, user, time, comments) */
+    .subtext, .subtext a, .subtext span {
+        color: #80FFEA !important; /* Cyan */
+        font-size: 8pt !important;
+    }
+
+    .subtext a:hover {
+        color: #FF80BF !important; /* Pink hover */
+        text-decoration: underline;
+    }
+
+    /* Score */
+    .score {
+        color: #FFCA80 !important; /* Orange */
+    }
+
+    /* Vote Arrows */
+    .votearrow {
+        filter: grayscale(100%) brightness(200%); 
+    }
+
+    /* Comments Page */
+    .c00, .c00 a {
+        color: #F8F8F2 !important;
+    }
+
+    /* Comment text links */
+    .comment a {
+        color: #80FFEA !important;
+        text-decoration: underline;
+    }
+    
+    .comment a:hover {
+        color: #FF80BF !important;
+    }
+
+    /* Input Fields (Search, Add Comment) */
+    input, textarea {
+        background-color: #454158 !important; /* Selection */
+        color: #F8F8F2 !important;
+        border: 1px solid #7970A9 !important;
+        padding: 4px;
+    }
+
+    /* Buttons */
+    input[type="submit"] {
+        background-color: #9580FF !important; /* Purple */
+        color: #F8F8F2 !important;
+        border: none !important;
+        cursor: pointer;
+    }
+
+    /* Footer */
+    .yclinks a {
+        color: #7970A9 !important;
+    }
+
+    /* Spacers/Dividers */
+    tr.spacer {
+        height: 8px !important;
+    }
+}

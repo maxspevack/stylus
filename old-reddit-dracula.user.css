@@ -1,0 +1,192 @@
+/* ==UserStyle==
+@name           Old Reddit Dracula PRO
+@namespace      github.com/dracula/old-reddit
+@version        1.0.0
+@description    Dracula PRO theme for Old Reddit
+@author         Dracula Theme
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("old.reddit.com"), domain("reddit.com") {
+    
+    /* --- Base Colors & Backgrounds --- */
+    body, .content, .side, .sitetable {
+        background-color: #22212C !important;
+        color: #F8F8F2 !important;
+    }
+
+    /* --- Header --- */
+    #header {
+        background-color: #454158 !important; /* Selection */
+        border-bottom: 1px solid #7970A9 !important;
+    }
+
+    #header-bottom-left {
+        background-color: #454158 !important;
+    }
+
+    .pagename a {
+        color: #FFCA80 !important; /* Orange */
+    }
+
+    /* Tab menu (hot, new, rising...) */
+    .tabmenu li a {
+        background-color: #22212C !important;
+        color: #7970A9 !important; /* Comment */
+        border: none !important;
+    }
+
+    .tabmenu li.selected a {
+        background-color: #22212C !important;
+        color: #80FFEA !important; /* Cyan */
+        border-bottom: 2px solid #80FFEA !important;
+    }
+
+    /* Top Bar (my subreddits) */
+    #sr-header-area {
+        background-color: #454158 !important;
+        border-bottom: 1px solid #7970A9 !important;
+        color: #F8F8F2 !important;
+    }
+    
+    #sr-header-area a {
+        color: #F8F8F2 !important;
+    }
+
+    /* --- Sidebar --- */
+    .side {
+        background-color: #22212C !important;
+    }
+
+    .sidebox .spacer {
+        background-color: #454158 !important;
+        color: #F8F8F2 !important;
+    }
+
+    .side .titlebox h1 a {
+        color: #FFCA80 !important; /* Orange */
+    }
+
+    .morelink {
+        background-color: #454158 !important;
+        background-image: none !important;
+        border: 1px solid #7970A9 !important;
+    }
+
+    .morelink a {
+        color: #80FFEA !important; /* Cyan */
+        font-weight: bold;
+    }
+
+    .morelink:hover {
+        background-color: #7970A9 !important;
+    }
+
+    /* Search Input */
+    #search input[type="text"] {
+        background-color: #454158 !important;
+        color: #F8F8F2 !important;
+        border: 1px solid #7970A9 !important;
+    }
+
+    /* --- Posts (Things) --- */
+    .thing .title {
+        color: #F8F8F2 !important;
+    }
+
+    .thing .title:visited, .thing .title.click {
+        color: #9580FF !important; /* Purple */
+    }
+
+    .thing .domain a {
+        color: #7970A9 !important;
+    }
+
+    .entry .buttons li a {
+        color: #7970A9 !important; /* Comment color for actions */
+        font-weight: bold;
+    }
+
+    .entry .buttons li a:hover {
+        color: #FF80BF !important; /* Pink */
+    }
+
+    .tagline, .search-result-meta {
+        color: #7970A9 !important;
+    }
+
+    .tagline a {
+        color: #80FFEA !important; /* Cyan */
+    }
+
+    /* Thumbnails */
+    .thumbnail {
+        border-color: #454158 !important;
+    }
+
+    /* Rank */
+    .rank {
+        color: #7970A9 !important;
+    }
+
+    /* Voting */
+    .midcol .score {
+        color: #F8F8F2 !important;
+    }
+
+    .arrow.up {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14'%3E%3Cpath fill='%23FFCA80' d='M7.5 0L0 7.5h5v6.5h5v-6.5h5L7.5 0z'/%3E%3C/svg%3E") !important;
+        background-position: 0 0 !important;
+    }
+
+    .arrow.down {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14'%3E%3Cpath fill='%239580FF' d='M7.5 14L15 6.5h-5V0h-5v6.5H0L7.5 14z'/%3E%3C/svg%3E") !important;
+        background-position: 0 0 !important;
+    }
+
+    /* Comments Area */
+    .commentarea .menuarea {
+        color: #7970A9 !important;
+    }
+
+    .usertext-body .md {
+        background-color: transparent !important;
+        color: #F8F8F2 !important;
+        border: none !important;
+    }
+    
+    .usertext-body .md blockquote {
+        background-color: #454158 !important;
+        border-left: 2px solid #FFCA80 !important;
+        color: #F8F8F2 !important;
+    }
+
+    .comment .author {
+        color: #80FFEA !important;
+    }
+
+    /* RES (Reddit Enhancement Suite) compatibility - basic */
+    .res-nightmode .entry.res-selected, 
+    .entry.res-selected, 
+    .res-comment-header.res-selected {
+        background-color: #454158 !important; /* Selection */
+        border: none !important;
+    }
+    
+    .res-nightmode .RES-keyNav-activeElement, 
+    .RES-keyNav-activeElement {
+        background-color: #454158 !important;
+    }
+
+    /* Link Flairs */
+    .linkflairlabel {
+        background-color: #454158 !important;
+        color: #FF80BF !important; /* Pink */
+        border: 1px solid #FF80BF !important;
+    }
+
+    /* Expando (Image preview) */
+    .expando-button {
+        background-color: #454158 !important;
+    }
+}
