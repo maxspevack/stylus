@@ -21,5 +21,6 @@ A dark theme for Rantingly.
 
 1.  Install the **Stylus** extension for Chrome/Firefox/Safari.
 2.  Click on the files above (e.g., `hacker-news-dracula.user.css`).
-3.  Click "Raw".
-4.  Stylus should automatically prompt you to install the style.
+3.  Click **"Raw"**.
+4.  Stylus will automatically prompt you to install the style.
+5.  **Auto-Updates:** These styles are configured to automatically check this repository for updates.
