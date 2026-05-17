@@ -7,20 +7,13 @@ Designed for use with the [Stylus](https://github.com/openstyles/stylus) browser
 ## 📦 Themes
 
 ### 1. Hacker News (`hacker-news-dracula.user.css`)
-A complete dark mode overhaul for [Hacker News](https://news.ycombinator.com/).
-*   **Features:** Dark background, Dracula colors for voting arrows and links, improved readability.
+A theme for [Hacker News](https://news.ycombinator.com/) using the [Dracula PRO](https://draculatheme.com/pro) palette.
 
 ### 2. Old Reddit (`old-reddit-dracula.user.css`)
-A theme for [Old Reddit](https://old.reddit.com/).
-*   **Features:** Minimalist dark mode, removing clutter and applying the consistent purple/pink accent scheme.
+A theme for [Old Reddit](https://old.reddit.com/) using the [Dracula PRO](https://draculatheme.com/pro) palette.
 
-### 3. Rantingly (`rantingly-dracula.user.css`)
-A dark theme for Rantingly.
+### 3. Rantingly Dracula (`rantingly-dracula.user.css`)
+A dark theme for Rantingly using the [Dracula PRO](https://draculatheme.com/pro) palette.
 
-## 🛠 Usage
-
-1.  Install the **Stylus** extension for Chrome/Firefox/Safari.
-2.  Click on the files above (e.g., `hacker-news-dracula.user.css`).
-3.  Click **"Raw"**.
-4.  Stylus will automatically prompt you to install the style.
-5.  **Auto-Updates:** These styles are configured to automatically check this repository for updates.
+### 4. Rantingly Catppuccin (`rantingly-catppuccin.user.css`)
+A dark theme for Rantingly using the [Catppuccin Mocha](https://catppuccin.com) palette.

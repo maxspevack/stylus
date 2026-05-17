@@ -1,0 +1,142 @@
+/* ==UserStyle==
+@name           Rantingly Catppuccin Mocha
+@namespace      github.com/maxspevack/stylus
+@version        1.0.0
+@description    Catppuccin Mocha theme for Rantingly.com
+@author         Max Spevack
+@homepageURL    https://github.com/maxspevack/stylus
+@supportURL     https://github.com/maxspevack/stylus/issues
+@updateURL      https://raw.githubusercontent.com/maxspevack/stylus/main/rantingly-catppuccin.user.css
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("rantingly.com") {
+    /* Catppuccin Mocha palette
+       base     #1e1e2e   mantle   #181825   crust    #11111b
+       surface0 #313244   surface1 #45475a   surface2 #585b70
+       overlay0 #6c7086   text     #cdd6f4
+       sky      #89dceb   mauve    #cba6f7   pink     #f5c2e7
+       peach    #fab387
+    */
+
+    /* Main Backgrounds & Text */
+    body,
+    #wrapper,
+    #mobile-wrapper,
+    #main-content,
+    .site-branding-wrap,
+    #header {
+        background-color: #1e1e2e !important;
+        color: #cdd6f4 !important;
+    }
+
+    /* Links */
+    a,
+    a.headline-link,
+    .wpd-top-links a,
+    .link-col a,
+    #featured a,
+    .widget-head a {
+        color: #89dceb !important; /* Sky */
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #cba6f7 !important; /* Mauve */
+    }
+
+    a:hover,
+    .wpd-top-links a:hover,
+    .link-col a:hover,
+    #featured a:hover,
+    .widget-head a:hover {
+        color: #f5c2e7 !important; /* Pink */
+        text-decoration: underline;
+    }
+
+    /* Navigation & Menus */
+    .header-nav li a {
+        background-color: #313244 !important; /* Surface0 */
+        color: #cdd6f4 !important;
+    }
+
+    .header-nav li.current-cat a,
+    .header-nav li.current-menu-item a,
+    .header-nav li .sub-menu a:hover {
+        background-color: #45475a !important; /* Surface1 */
+        color: #cdd6f4 !important;
+    }
+
+    .header-nav .sub-menu {
+        border-top: 1px solid #89dceb !important; /* Sky */
+    }
+
+    /* Headers */
+    h1, h2, h3, h4, h5, h6,
+    #main-content h1,
+    #main-content h2,
+    h2.widget-head,
+    .widget-head {
+        color: #fab387 !important; /* Peach */
+    }
+
+    /* Borders & Separators */
+    .posts-list li.border,
+    ul.border li,
+    .commentlist .children,
+    #comments,
+    #respond,
+    .archive .widget-box,
+    .home .link-col,
+    .blog .link-col,
+    .archive .link-col {
+        border-color: #45475a !important; /* Surface1 */
+    }
+
+    /* Load More Button */
+    .load-more-link {
+        background-color: #313244 !important;
+        color: #cdd6f4 !important;
+        box-shadow: 0px 1px 4px #11111b !important; /* Crust */
+    }
+
+    .load-more-link:hover {
+        background-color: #45475a !important;
+        color: #cdd6f4 !important;
+    }
+
+    /* Inputs & Forms */
+    input, textarea, select {
+        background-color: #313244 !important;
+        color: #cdd6f4 !important;
+        border: 1px solid #6c7086 !important; /* Overlay0 */
+    }
+
+    /* Footer / Misc */
+    footer, .footer {
+        background-color: #181825 !important; /* Mantle */
+        border-top: 1px solid #45475a !important;
+    }
+
+    /* Images */
+    img {
+        opacity: 0.9;
+    }
+    img:hover {
+        opacity: 1;
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #181825;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #45475a;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6c7086;
+    }
+}
