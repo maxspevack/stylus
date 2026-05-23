@@ -1,0 +1,123 @@
+/* ==UserStyle==
+@name           Drudge Report Catppuccin Mocha
+@namespace      github.com/maxspevack/stylus
+@version        1.0.0
+@description    Catppuccin Mocha theme for DrudgeReport.com
+@author         Max Spevack
+@homepageURL    https://github.com/maxspevack/stylus
+@supportURL     https://github.com/maxspevack/stylus/issues
+@updateURL      https://raw.githubusercontent.com/maxspevack/stylus/main/drudge-catppuccin.user.css
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("drudgereport.com") {
+    /* Catppuccin Mocha palette
+       base     #1e1e2e   mantle   #181825   crust    #11111b
+       surface0 #313244   surface1 #45475a   surface2 #585b70
+       overlay0 #6c7086   overlay2 #9399b2
+       text     #cdd6f4   subtext1 #bac2de
+       blue     #89b4fa   sky      #89dceb   mauve    #cba6f7
+       pink     #f5c2e7   peach    #fab387   yellow   #f9e2af
+    */
+
+    /* Body — overrides inline TEXT/LINK/VLINK/ALINK attrs */
+    body {
+        background-color: #1e1e2e !important;
+        color: #cdd6f4 !important;
+    }
+
+    /* Drudge's <font color="..."> tags would otherwise force black */
+    font, tt, b, i, u, center, p, div, span {
+        color: inherit;
+    }
+
+    /* Tables — Drudge uses table-based 3-column layout */
+    table, tr, td, th, tbody, thead {
+        background-color: transparent !important;
+        color: inherit !important;
+    }
+
+    /* Links — Drudge wraps story links in <b> for the bold treatment.
+       All link states (LINK/VLINK/ALINK) are forced to #000 in inline body attrs;
+       override here. */
+    a, a:link {
+        color: #89b4fa !important; /* Blue */
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #9399b2 !important; /* Overlay2 — faded for "already read" */
+    }
+
+    a:hover, a:active {
+        color: #f5c2e7 !important; /* Pink */
+        text-decoration: underline;
+    }
+
+    /* The big top headline (font size="+7") and other oversized text — peach */
+    font[size="+7"], font[size="+6"], font[size="+5"], font[size="+4"] {
+        color: #fab387 !important;
+    }
+    font[size="+7"] a, font[size="+7"] a:link,
+    font[size="+6"] a, font[size="+6"] a:link,
+    font[size="+5"] a, font[size="+5"] a:link,
+    font[size="+4"] a, font[size="+4"] a:link {
+        color: #fab387 !important; /* Peach for splash headline */
+    }
+    font[size="+7"] a:visited,
+    font[size="+6"] a:visited,
+    font[size="+5"] a:visited,
+    font[size="+4"] a:visited {
+        color: #9399b2 !important;
+    }
+    font[size="+7"] a:hover,
+    font[size="+6"] a:hover,
+    font[size="+5"] a:hover,
+    font[size="+4"] a:hover {
+        color: #f5c2e7 !important;
+    }
+
+    /* Horizontal rules — Drudge uses <HR> liberally as section separators */
+    hr {
+        border: none !important;
+        border-top: 1px solid #45475a !important; /* Surface1 */
+        background-color: transparent !important;
+        color: #45475a !important;
+        height: 1px !important;
+    }
+
+    /* Logo image — slight dim on the masthead */
+    img[src*="logo"] {
+        opacity: 0.85;
+    }
+
+    /* Generic images — dim slightly, brighten on hover */
+    img {
+        opacity: 0.9;
+    }
+    img:hover {
+        opacity: 1;
+    }
+
+    /* Ad containers — leave structurally untouched, just give them a subtle frame
+       so they don't blend into the body and look like content */
+    .DR-AD-SPACE,
+    div[id^="DR-DESKTOP-AD-SPOT"],
+    div[data-freestar-ad] {
+        background-color: transparent !important;
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #181825; /* Mantle */
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #45475a; /* Surface1 */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6c7086; /* Overlay0 */
+    }
+}

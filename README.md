@@ -17,3 +17,6 @@ A dark theme for Rantingly using the [Dracula PRO](https://draculatheme.com/pro)
 
 ### 4. Rantingly Catppuccin (`rantingly-catppuccin.user.css`)
 A dark theme for Rantingly using the [Catppuccin Mocha](https://catppuccin.com) palette.
+
+### 5. Drudge Report Catppuccin (`drudge-catppuccin.user.css`)
+A dark theme for [Drudge Report](https://www.drudgereport.com) using the [Catppuccin Mocha](https://catppuccin.com) palette.
